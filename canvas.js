@@ -1,3 +1,22 @@
+//Canvas (англ. canvas — «холст», рус. канва́с) — элемент HTML5, предназначенный для создания растрового двухмерного изображения при помощи скриптования, обычно на языке JavaScript[1]. Начало отсчёта блока находится слева сверху. От него и строится каждый элемент блока[2]. Размер пространства координат не обязательно отражает размер фактической отображаемой площади[2]. По умолчанию его ширина равна тремстам пикселям, а высота ста пятидесяти[2].
+
+//Используется, как правило, для отрисовки графиков для статей и игрового поля в некоторых браузерных играх.//
+
+//Компанией Google была выпущена JavaScript библиотека explorercanvas , которая позволяла работать с Canvas в браузерах IE7 и IE8.
+
+//Особенности
+//Изменение высоты или ширины холста сотрет всё его содержимое и все настройки, проще говоря он создастся заново[12];
+//Начало отсчёта (точка 0,0) находится в левом верхнем углу[13]. Но её можно сдвигать[14];
+//3D контекста нет, есть отдельные разработки, но они не стандартизованы[15];
+//Цвет текста можно указывать аналогично CSS, впрочем, как и размер шрифта.
+
+
+//Нагружает процессор и оперативную память;
+//Из-за ограничения сборщика мусора, нет возможности очистить память;
+//Необходимо самому обрабатывать события с объектами[19];
+//Плохая производительность при большом разрешении[19];
+//Приходится вырисовывать отдельно каждый элемент[19].
+
 var canvas = document.getElementById("myCanvas");//Find the Canvas Element in DOM
 var ctx = canvas.getContext("2d");//Create a Drawing Object in 2d
 //Draw on the Canvas
@@ -30,7 +49,7 @@ ctx.fillText("24%", 226, 130);
 ctx.fillStyle = "#708090";//choose color
 ctx.font = "18px Arial";//Set font to "30px Arial" (font-size font)
 //ctx.textAlign = "center";//choose centre of the text as a point for placement in the canvas' coordinate system 
-ctx.fillText("Types of software is builded with HTML5", 10, 170);//("Text", x, y);
+ctx.fillText("Types of software built with HTML5", 10, 170);//("Text", x, y);
 
 //draw circle
 ctx.beginPath();//Begin a path
@@ -55,7 +74,7 @@ ctx.strokeStyle = "#2D95BF";//stroke color
 ctx.stroke();//draw circle
 //end circle
 
-ctx.fillStyle = "#2D95BF";//choose color
+ctx.fillStyle = "#2D95BF";//choose colour
 ctx.font = "9px Arial";
 ctx.fillText("7%", 160, 297);
 ctx.fillStyle = "#4EBA6F";
